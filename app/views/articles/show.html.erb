@@ -3,3 +3,7 @@
 
 <%= link_to "<= Go back to article list", articles_path %>
 
+<%= link_to "delete", article_path(@article), method: :delete, 
+	:confirm => "Are you sure you want to delet e this article?" %>
+
+<%= link_to "edit", edit_article_path(@article)%>

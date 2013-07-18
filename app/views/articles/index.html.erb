@@ -1,4 +1,6 @@
-<h1> All Articles</h1>
+<h1> All Articles      							
+<h2><button><%= link_to "Create New Article", new_article_path, :class => "new_article" %></button></h2>
+</h1>
 
 <ul id="articles">
   <% @articles.each do |article| %>
@@ -9,4 +11,3 @@
   <% end %>
 </ul>
 
-<br/><%= link_to "Create a new Article", new_article_path, :id => "new_article" %> 
